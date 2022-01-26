@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+body{
+    max-width: 1200px;
+    font-family: 'Inconsolata', monospace;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    height: 85vh;
+    width: 100%;
+    background-color: #03045e;
+    margin-top: 7%;
+}
+
+.main{
+
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+button{
+    padding: 2%;
+    margin: 3%;
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    border-color: yellow;
+    color: white;
+    background-image: linear-gradient(to right, #e1d425, rgb(157, 255, 0), #7f63c7);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    transition:  300ms ease-in-out;
+    border-radius: 18px;
+}
+button:hover {
+    color: rgb(19, 21, 179);
+    background-image: linear-gradient(45deg,yellow 100%, transparent 50%);
+  }
+  button{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-image: linear-gradient(to right, #e1d425, rgb(157, 255, 0), #7f63c7);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+button:hover {
+    background-position: 100% 0;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  body img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media only screen and (max-width: 600px) {
+    body img{
+        width: 100%;
+    }
+  }

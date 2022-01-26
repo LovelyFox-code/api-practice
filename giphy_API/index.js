@@ -1,6 +1,26 @@
 let request = new XMLHttpRequest();
 
-request.open('GET', 'https://api.giphy.com/v1/gifs/random?api_key=i4tk5nrM0ly55vVtQKPT5VdPeYl0rIJb&tag=racoons&raiting=g');
+const giphy = {
+    baseURL: "https://api.giphy.com/v1/gifs/",
+    apiKey: "0UTRbFtkMxAplrohufYco5IY74U8hOes",
+    tag: "animals",
+    type: "random",
+    rating: "pg-13"
+};
+
+
+let giphyURL = encodeURI(
+    giphy.baseURL +
+        giphy.type +
+        "?api_key=" +
+        giphy.apiKey +
+        "&tag=" +
+        giphy.tag +
+        "&rating=" +
+        giphy.rating
+);
+
+request.open('GET', giphyURL);
 
 request.onload = function() {
     let response = request.response;
@@ -18,3 +38,5 @@ request.oneerror = function() {
     console.log("There seems to be a problem");
 }
 request.send();
+
+
