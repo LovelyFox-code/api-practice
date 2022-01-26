@@ -2,18 +2,19 @@
 body{
     max-width: 1200px;
     font-family: 'Inconsolata', monospace;
-        display: flex;
+   
+}
+
+.main{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
+    
     height: 85vh;
     width: 100%;
     background-color: #03045e;
     margin-top: 7%;
-}
-
-.main{
-
+    margin: auto;
 }
 h1{
     color: yellow;
@@ -66,14 +67,12 @@ button:hover {
     transition: all 0.4s ease-in-out;
   }
   body img{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+
   }
   @media only screen and (max-width: 600px) {
     body img{
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
   }
